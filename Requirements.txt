@@ -1,0 +1,38 @@
+
+class Item
+
+- Nome : string 
+- Quantidade : int (>0)
+- Prioridade : int (1,2,3,4)
+- Preço : float (>0)
+
++ SetNome(string):void
++ Setquantidade(int):bool
++ Setprioridade(int):bool
++ Setpreço(float):bool
++ getNome():string
++ getquantidade():int
++ getprioridade():int
++ getpreço( ):float
++ getitem():string // retorna tudo
+
+class Lista
+ - tamanho:int (>0)
+ - vetor: **Item
+ - final: int 
+ 
+ + settamanho(int):bool
+ + gettamanho():int
+ + inserir(*item):bool
+ + remover(*item):bool
+ + buscar(*item):bool
+ + alterar(*item):bool
+ + vazia ():bool
+ + mostrarlista():string
+ 
+ class testalista
+ 
+ - obj:Lista
+ 
+ + menu():void
+ +criaitem():*item
