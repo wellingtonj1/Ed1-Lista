@@ -5,6 +5,12 @@ testalishta::testalishta()
 
 }
 
-void testalishta::menu();
+void testalishta::menu()
+{
 
-item* testalishta::criaitem();
+}
+
+item* testalishta::criaitem()
+{
+
+}

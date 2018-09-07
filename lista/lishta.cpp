@@ -5,18 +5,35 @@ lishta::lishta()
 
 }
 
-bool lishta::settamanho(int);
+bool lishta::settamanho(int)
+{
 
-int lishta::gettamanho();
+}
+int lishta::gettamanho()
+{
 
-bool lishta::inserir(item*);
+}
+bool lishta::inserir(item* x)
+{
 
-bool lishta::remover(item*);
+}
+bool lishta::remover(item*)
+{
 
-bool lishta::buscar(item*);
+}
+bool lishta::buscar(item*)
+{
 
-bool lishta::alterar(item*);
+}
+bool lishta::alterar(item*)
+{
 
-bool lishta::vazia ();
+}
+bool lishta::vazia ()
+{
 
-string lishta::mostrarlista();
+}
+string lishta::mostrarlista()
+{
+
+}

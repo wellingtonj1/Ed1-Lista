@@ -1,6 +1,11 @@
 #ifndef LISHTA_H
 #define LISHTA_H
+#include <iostream>
+#include <string>
+#include <string.h>
+#include "item.h"
 
+using namespace std;
 
 class lishta
 {
@@ -14,11 +19,11 @@ class lishta
 
     bool settamanho(int);
     int gettamanho();
-    bool inserir(item*);
-    bool remover(item*);
-    bool buscar(item*);
-    bool alterar(item*);
-    bool vazia ();
+    bool inserir(item* );
+    bool remover(item* );
+    bool buscar(item* );
+    bool alterar(item* );
+    bool vazia();
     string mostrarlista();
 
     lishta();

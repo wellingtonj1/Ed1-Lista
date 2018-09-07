@@ -4,20 +4,48 @@ item::item()
 {
 
 }
-void item::SetNome(string);
+void item::SetNome(string x)
+{
 
-bool item::Setquantidade(int);
+}
 
-bool item::Setprioridade(int);
+bool item::Setquantidade(int)
+{
 
-bool item::Setpreço(float);
+}
 
-string item::getNome();
+bool item::Setprioridade(int)
+{
 
-int item::getquantidade();
+}
 
-int item::getprioridade();
+bool item::Setpreco(float)
+{
 
-float item::getpreço();
+}
 
-string item::getitem(); // retorna tudo
+string item::getNome()
+{
+
+}
+
+int item::getquantidade()
+{
+
+}
+
+int item::getprioridade()
+{
+
+}
+
+float item::getpreco()
+{
+
+}
+
+string item::getitem() // retorna tudo
+{
+
+}
+
