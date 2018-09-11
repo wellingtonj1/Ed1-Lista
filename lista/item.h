@@ -24,7 +24,7 @@ class item
     int getquantidade();
     int getprioridade();
     float getpreco();
-    string getitem(); // retorna tudo
+    //string getitem(); // retorna tudo
     item();
 };
 

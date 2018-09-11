@@ -11,12 +11,13 @@ class testalishta
 {
     private:
 
-    lishta obj;
+    lishta objlista;
+    item objitem;
 
     public:
 
     void menu();
-    item* criaitem();
+    item criaitem();
     testalishta();
 
 };
