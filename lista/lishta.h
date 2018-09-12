@@ -21,7 +21,7 @@ class lishta
     int gettamanho();
     bool inserir(item* );
     bool remover(item* );
-    bool buscar(item* );
+    item* buscar(item* );
     bool alterar(item* );
     bool vazia();
     string mostrarlista();

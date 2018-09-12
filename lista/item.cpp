@@ -59,8 +59,8 @@ float item::getpreco()
     return Preco;
 }
 
-/*string item::getitem() // retorna tudo
+void item::getitem() // retorna tudo
 {
-
-}*/
+    std::cout<<"\nNome: "<<getNome()<<"\nQuantidade: "<<getquantidade()<<"\nPreço"<<getpreco()<<"\nPrioridade"<<getprioridade()<<endl;
+}
 

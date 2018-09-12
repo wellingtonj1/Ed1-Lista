@@ -24,6 +24,7 @@ void testalishta::menu()
         {
             case 1://inserir
 
+                objlista.inserir(criaitem());
                 break;
 
             case 2://remover
@@ -31,6 +32,7 @@ void testalishta::menu()
                 break;
 
             case 3://buscar
+
 
                 break;
 
@@ -46,7 +48,7 @@ void testalishta::menu()
 
 }
 
-item testalishta::criaitem()
+item* testalishta::criaitem()
 {
     string aux;
     int auxint;
@@ -71,5 +73,5 @@ item testalishta::criaitem()
     std::cin>>auxfloat;
     objitem.Setpreco(auxfloat);
 
-    return objitem;
+    return &objitem;
 }

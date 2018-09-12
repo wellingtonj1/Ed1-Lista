@@ -17,7 +17,7 @@ class testalishta
     public:
 
     void menu();
-    item criaitem();
+    item* criaitem();
     testalishta();
 
 };
