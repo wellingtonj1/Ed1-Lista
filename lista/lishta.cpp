@@ -21,22 +21,23 @@ int lishta::gettamanho()
 }
 bool lishta::inserir(item* x)
 {
-    if(cheia())
+    if(x==0)
     {
-        std::cout<<"lista cheia!";
+        return false;
     }
-    if(vazia())
-    {
-        *(vetor+final)=x;
-        final++;
-        return true;
-    }
-    return false;
-}
-bool lishta::remover(item* x)
-{
+    vetor[final]=x;
+    final++;
+    return true;
 
 }
+/*bool lishta::remover(item* aux)
+{
+    if(aux==0) return 0;
+
+    item* retorno=new item;
+    *retorno=*vetor[]
+
+}*/
 void lishta::buscar(item* x)
 {
    int i=0;
@@ -55,10 +56,10 @@ void lishta::buscar(item* x)
    }
 
 }
-bool lishta::alterar(item* x)
+/*bool lishta::alterar(item* x)
 {
 
-}
+}*/
 bool lishta::vazia ()
 {
     if(final<tamanho)
@@ -67,10 +68,7 @@ bool lishta::vazia ()
     }
     return false;
 }
-string lishta::mostrarlista()
-{
 
-}
 bool lishta::cheia()
 {
     if(final==tamanho)

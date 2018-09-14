@@ -9,6 +9,5 @@ int main()
     testalishta p;
     p.menu();
 
-    return 0;
 
 }

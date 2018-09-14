@@ -21,7 +21,7 @@ bool item::Setquantidade(int x)
 
 bool item::Setprioridade(int x)
 {
-    if(x>0&&x<5)
+    if(x>0)
     {
         Prioridade=x;
         return true;

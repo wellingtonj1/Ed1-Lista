@@ -24,7 +24,6 @@ class lishta
     void buscar(item* );
     bool alterar(item* );
     bool vazia();
-    string mostrarlista();
     bool cheia();
     lishta();
 };

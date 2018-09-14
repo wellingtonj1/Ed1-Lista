@@ -8,6 +8,7 @@ testalishta::testalishta()
 void testalishta::menu()
 {
     int escolha;
+    string busca;
     do
     {
         std::cout<<"\nEscolha a opção abaixo \n";
@@ -25,7 +26,8 @@ void testalishta::menu()
         {
             case 1://inserir
 
-                objlista.inserir(criaitem());
+
+                objlista->inserir(criaitem());
                 break;
 
             case 2://remover
@@ -34,6 +36,11 @@ void testalishta::menu()
 
             case 3://buscar
 
+                std::cout<<"\nDigite o nome para a busca : ";
+                cin.ignore();
+                getline(cin,busca);
+                objitem->SetNome(busca);
+                objlista->buscar(objitem);
 
                 break;
 
@@ -54,25 +61,26 @@ item* testalishta::criaitem()
     string aux;
     int auxint;
     float auxfloat;
+    item* pt=new item;
     std::cout<<"\n Digite o nome da pessoa \n ";
     std::cin.ignore();
     std::getline(cin,aux);
-    objitem.SetNome(aux);
+    pt->SetNome(aux);
+
 
     std::cout<<"\n Digite a prioridade \n";
-    std::cin.ignore();
     std::cin>>auxint;
-    objitem.Setprioridade(auxint);
+    pt->Setprioridade(auxint);
+
 
     std::cout<<"\n Digite a quantidade \n";
-    std::cin.ignore();
     std::cin>>auxint;
-    objitem.Setquantidade(auxint);
+    pt->Setquantidade(auxint);
 
-    std::cout<<"\n Digite o preço ";
-    std::cin.ignore();
+
+    std::cout<<"\n Digite o preço \n";
     std::cin>>auxfloat;
-    objitem.Setpreco(auxfloat);
+    pt->Setpreco(auxfloat);
 
-    return &objitem;
+    return pt;
 }

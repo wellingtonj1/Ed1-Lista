@@ -11,8 +11,8 @@ class testalishta
 {
     private:
 
-    lishta objlista;
-    item objitem;
+    lishta* objlista;
+    item* objitem;
 
     public:
 
