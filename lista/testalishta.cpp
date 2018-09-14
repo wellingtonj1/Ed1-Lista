@@ -15,7 +15,8 @@ void testalishta::menu()
         std::cout<<"\n [2] Para remover um elemento na lista\n";
         std::cout<<"\n [3] Para buscar um elemento na lista\n";
         std::cout<<"\n [4] Para alterar um elemento na lista\n";
-        std::cout<<"\n [5] Para sair do programa\n";
+        std::cout<<"\n [5] Para mostrar todos os elementos da lista \n";
+        std::cout<<"\n [6] Para sair do programa\n";
         std::cout<<" Sua escolha [  ]\b\b\b";
         std::cin>>escolha;
 

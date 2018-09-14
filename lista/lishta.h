@@ -21,11 +21,11 @@ class lishta
     int gettamanho();
     bool inserir(item* );
     bool remover(item* );
-    item* buscar(item* );
+    void buscar(item* );
     bool alterar(item* );
     bool vazia();
     string mostrarlista();
-
+    bool cheia();
     lishta();
 };
 

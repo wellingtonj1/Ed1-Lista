@@ -21,6 +21,10 @@ int lishta::gettamanho()
 }
 bool lishta::inserir(item* x)
 {
+    if(cheia())
+    {
+        std::cout<<"lista cheia!";
+    }
     if(vazia())
     {
         *(vetor+final)=x;
@@ -33,7 +37,7 @@ bool lishta::remover(item* x)
 {
 
 }
-item* lishta::buscar(item* x)
+void lishta::buscar(item* x)
 {
    int i=0;
    if(!vazia())
@@ -48,7 +52,6 @@ item* lishta::buscar(item* x)
        {
            std::cout<<"\nElemento não encontrado";
        }
-
    }
 
 }
@@ -68,3 +71,15 @@ string lishta::mostrarlista()
 {
 
 }
+bool lishta::cheia()
+{
+    if(final==tamanho)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
